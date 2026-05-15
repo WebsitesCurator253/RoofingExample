@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pacific Northwest Roofing Co. – Trusted roofing contractor serving Pierce County and King County, WA. Roof repair, replacement, gutters & inspections. Call 253-000-0000 for a free quote." />
+  <meta name="keywords" content="roofing contractor Pierce County, roofing company King County, roof repair Tacoma, roof replacement Seattle, roofer Federal Way, gutter installation WA" />
+  <meta name="author" content="Pacific Northwest Roofing Co." />
+  <meta property="og:title" content="Pacific Northwest Roofing Co. | Pierce & King County Roofers" />
+  <meta property="og:description" content="Trusted local roofers serving Pierce and King County, WA since 2001. Free estimates, licensed & insured." />
+  <meta property="og:type" content="website" />
+  <title>Pacific Northwest Roofing Co. | Pierce & King County, WA</title>
+
+  <!-- Schema Markup for Local Business -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Pacific Northwest Roofing Co.",
+    "telephone": "253-000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tacoma",
+      "addressRegion": "WA",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Pierce County, WA", "King County, WA"],
+    "openingHours": "Mo-Fr 07:00-18:00",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --navy: #1a2840;
+      --navy-dark: #111d2e;
+      --red: #c0392b;
+      --red-dark: #a93226;
+      --gold: #d4a017;
+      --cream: #f5f1eb;
+      --gray-light: #f0ede8;
+      --gray-mid: #d0ccc6;
+      --gray-text: #5a5650;
+      --white: #ffffff;
+      --text-dark: #1e1e1e;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: var(--text-dark);
+      background: var(--white);
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3, h4 { font-family: 'Oswald', sans-serif; letter-spacing: 0.02em; }
+
+    /* ── TOP BAR ── */
+    .top-bar {
+      background: var(--navy-dark);
+      color: #b0bec5;
+      font-size: 14px;
+      padding: 8px 0;
+      border-bottom: 2px solid var(--red);
+    }
+    .top-bar .inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .top-bar a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    .top-bar a:hover { text-decoration: underline; }
+    .top-bar .license-badge {
+      background: rgba(212,160,23,0.15);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 2px 10px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── HEADER / NAV ── */
+    header {
+      background: var(--navy);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 16px rgba(0,0,0,0.4);
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+    .logo-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--red);
+      clip-path: polygon(50% 0%, 100% 40%, 100% 100%, 0% 100%, 0% 40%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .logo-icon svg { width: 26px; height: 26px; fill: white; }
+    .logo-text { line-height: 1.1; }
+    .logo-text .company { font-family: 'Oswald', sans-serif; font-size: 20px; font-weight: 700; color: var(--white); letter-spacing: 0.04em; }
+    .logo-text .tagline { font-size: 11px; color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase; }
+
+    nav { display: flex; align-items: center; gap: 28px; }
+    nav a {
+      color: #c8d6e5;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--gold); }
+    .nav-cta {
+      background: var(--red);
+      color: white !important;
+      padding: 10px 22px;
+      border-radius: 4px;
+      font-size: 14px !important;
+      transition: background 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--red-dark) !important; color: white !important; }
+
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; }
+    .hamburger span { display: block; width: 26px; height: 2px; background: white; border-radius: 2px; transition: 0.3s; }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 560px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: var(--navy-dark);
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(105deg, rgba(17,29,46,0.97) 0%, rgba(17,29,46,0.85) 55%, rgba(17,29,46,0.5) 100%),
+        url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1400&q=80') center/cover no-repeat;
+    }
+    /* Diagonal red stripe accent */
+    .hero-bg::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 160px; height: 100%;
+      background: var(--red);
+      clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+      opacity: 0.08;
+    }
+    .hero-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 3px;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 58px);
+      color: white;
+      line-height: 1.1;
+      max-width: 700px;
+      font-weight: 700;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .hero h1 span { color: var(--gold); }
+    .hero-sub {
+      font-family: 'Source Serif 4', serif;
+      font-size: clamp(16px, 2vw, 20px);
+      color: #c0cdd8;
+      max-width: 560px;
+      margin: 18px 0 36px;
+      line-height: 1.6;
+    }
+    .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--red);
+      color: white;
+      padding: 16px 34px;
+      border-radius: 4px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .btn-primary:hover { background: var(--red-dark); transform: translateY(-2px); }
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 4px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.45);
+      transition: border-color 0.2s, background 0.2s;
+      display: inline-block;
+    }
+    .btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+    .hero-trust {
+      display: flex;
+      gap: 28px;
+      margin-top: 42px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #9fb5c8;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .trust-item svg { width: 18px; height: 18px; fill: var(--gold); }
+
+    /* ── STATS BAR ── */
+    .stats-bar {
+      background: var(--red);
+      padding: 22px 0;
+    }
+    .stats-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      text-align: center;
+    }
+    .stat-item { border-right: 1px solid rgba(255,255,255,0.25); padding: 6px 0; }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Oswald', sans-serif;
+      font-size: 34px;
+      font-weight: 700;
+      color: white;
+      line-height: 1;
+    }
+    .stat-label { font-size: 13px; color: rgba(255,255,255,0.82); font-weight: 500; margin-top: 4px; }
+
+    /* ── SECTION SHARED ── */
+    .section-label {
+      font-family: 'Oswald', sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .section-title {
+      font-size: clamp(26px, 3.5vw, 40px);
+      font-weight: 700;
+      color: var(--navy);
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+    .section-intro {
+      font-family: 'Source Serif 4', serif;
+      font-size: 18px;
+      color: var(--gray-text);
+      max-width: 620px;
+      line-height: 1.7;
+    }
+    .divider {
+      width: 56px;
+      height: 4px;
+      background: var(--red);
+      margin: 14px 0 22px;
+      border-radius: 2px;
+    }
+
+    /* ── SERVICES ── */
+    .services { background: var(--cream); padding: 80px 0; }
+    .services .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .services-header { margin-bottom: 48px; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .service-card {
+      background: white;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border-top: 4px solid var(--red);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .service-card:hover { transform: translateY(-5px); box-shadow: 0 8px 32px rgba(0,0,0,0.13); }
+    .service-img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+      background: var(--gray-mid);
+    }
+    .service-img-placeholder {
+      width: 100%;
+      height: 190px;
+      background: linear-gradient(135deg, #d0ccc6 0%, #b8b4ae 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .service-img-placeholder svg { width: 40px; height: 40px; fill: #8a8680; }
+    .service-img-placeholder span { font-size: 12px; color: #8a8680; font-weight: 600; letter-spacing: 0.05em; }
+    .service-body { padding: 22px 24px 26px; }
+    .service-body h3 { font-size: 20px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
+    .service-body p { font-size: 15px; color: var(--gray-text); line-height: 1.65; margin-bottom: 14px; }
+    .service-link {
+      color: var(--red);
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .service-link:hover { text-decoration: underline; }
+
+    /* ── WHY US ── */
+    .why-us { background: var(--navy); padding: 80px 0; }
+    .why-us .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .why-us .section-label { color: var(--gold); }
+    .why-us .section-title { color: white; }
+    .why-us .divider { background: var(--gold); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      margin-top: 44px;
+    }
+    .why-item {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      background: rgba(255,255,255,0.06);
+      border-radius: 6px;
+      padding: 24px;
+      border-left: 4px solid var(--red);
+    }
+    .why-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .why-icon svg { width: 24px; height: 24px; fill: white; }
+    .why-text h4 { font-size: 18px; font-weight: 700; color: white; margin-bottom: 6px; }
+    .why-text p { font-size: 15px; color: #9aadbd; line-height: 1.6; }
+
+    /* ── PHOTO GALLERY ── */
+    .gallery { background: white; padding: 80px 0; }
+    .gallery .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 200px 200px;
+      gap: 12px;
+      margin-top: 40px;
+    }
+    .gallery-cell {
+      border-radius: 5px;
+      overflow: hidden;
+      background: var(--gray-light);
+      position: relative;
+    }
+    .gallery-cell:first-child { grid-column: span 2; grid-row: span 2; }
+    .gallery-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #e8e4de 0%, #d0ccc6 100%);
+      transition: filter 0.2s;
+    }
+    .gallery-cell:hover .gallery-placeholder { filter: brightness(0.93); }
+    .gallery-placeholder svg { width: 36px; height: 36px; fill: #9a9690; }
+    .gallery-placeholder span { font-size: 12px; color: #7a7670; font-weight: 600; letter-spacing: 0.05em; text-align: center; padding: 0 12px; }
+    .gallery-cell:first-child .gallery-placeholder svg { width: 52px; height: 52px; }
+    .gallery-cell:first-child .gallery-placeholder span { font-size: 14px; }
+
+    /* ── REVIEWS ── */
+    .reviews { background: var(--cream); padding: 80px 0; }
+    .reviews .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 46px;
+    }
+    .review-card {
+      background: white;
+      border-radius: 6px;
+      padding: 28px;
+      box-shadow: 0 3px 16px rgba(0,0,0,0.07);
+      position: relative;
+      border-bottom: 4px solid var(--red);
+    }
+    .review-card::before {
+      content: '\201C';
+      font-family: 'Source Serif 4', serif;
+      font-size: 80px;
+      color: var(--red);
+      opacity: 0.12;
+      position: absolute;
+      top: 10px;
+      left: 18px;
+      line-height: 1;
+    }
+    .stars { display: flex; gap: 3px; margin-bottom: 14px; }
+    .stars svg { width: 20px; height: 20px; fill: var(--gold); }
+    .review-card p {
+      font-family: 'Source Serif 4', serif;
+      font-size: 16px;
+      color: #4a4644;
+      line-height: 1.7;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+    .reviewer { display: flex; align-items: center; gap: 12px; }
+    .reviewer-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--navy);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Oswald', sans-serif;
+      font-size: 18px;
+      color: white;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .reviewer-info .name { font-weight: 700; font-size: 15px; color: var(--navy); }
+    .reviewer-info .location { font-size: 13px; color: var(--gray-text); }
+    .google-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 36px;
+      padding: 16px 20px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+      max-width: 340px;
+    }
+    .google-badge-text strong { display: block; font-size: 16px; color: var(--navy); }
+    .google-badge-text span { font-size: 13px; color: var(--gray-text); }
+
+    /* ── SERVICE AREA ── */
+    .area { background: white; padding: 80px 0; }
+    .area .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .area-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+    .area-cities { margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px 30px; }
+    .area-city {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--gray-mid);
+      font-size: 15px;
+      color: var(--gray-text);
+      font-weight: 500;
+    }
+    .area-city svg { width: 16px; height: 16px; fill: var(--red); flex-shrink: 0; }
+    .map-box {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.12);
+      border: 4px solid white;
+      outline: 2px solid var(--gray-mid);
+    }
+    .map-placeholder {
+      width: 100%;
+      height: 380px;
+      background: linear-gradient(135deg, #dde8f0 0%, #c8d8e8 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      position: relative;
+    }
+    .map-placeholder svg { width: 48px; height: 48px; fill: var(--navy); opacity: 0.5; }
+    .map-placeholder p { font-size: 15px; color: var(--navy); font-weight: 600; opacity: 0.7; }
+    .map-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--navy);
+      color: white;
+      padding: 10px 22px;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: background 0.2s;
+    }
+    .map-link:hover { background: var(--navy-dark); }
+    .map-link svg { width: 16px; height: 16px; fill: white; }
+
+    /* ── QUOTE FORM ── */
+    .quote { background: var(--navy-dark); padding: 80px 0; }
+    .quote .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .quote-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 70px; align-items: center; }
+    .quote-info .section-label { color: var(--gold); }
+    .quote-info .section-title { color: white; }
+    .quote-info .divider { background: var(--gold); }
+    .quote-info p { color: #8fa3b3; font-size: 16px; line-height: 1.7; margin-bottom: 22px; }
+    .contact-points { display: flex; flex-direction: column; gap: 14px; margin-top: 10px; }
+    .contact-point {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #c0d0dc;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .contact-point a { color: var(--gold); text-decoration: none; font-weight: 700; }
+    .contact-point a:hover { text-decoration: underline; }
+    .contact-point svg { width: 22px; height: 22px; fill: var(--red); flex-shrink: 0; }
+
+    .quote-form {
+      background: white;
+      border-radius: 8px;
+      padding: 40px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    .quote-form h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 24px;
+    }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--navy);
+      margin-bottom: 6px;
+      letter-spacing: 0.02em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 2px solid var(--gray-mid);
+      border-radius: 4px;
+      font-size: 16px;
+      font-family: 'Open Sans', sans-serif;
+      color: var(--text-dark);
+      transition: border-color 0.2s;
+      background: white;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--navy);
+    }
+    .form-group textarea { resize: vertical; min-height: 90px; }
+    .form-submit {
+      width: 100%;
+      background: var(--red);
+      color: white;
+      border: none;
+      padding: 16px;
+      border-radius: 4px;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 6px;
+    }
+    .form-submit:hover { background: var(--red-dark); }
+    .form-note { font-size: 12px; color: var(--gray-text); text-align: center; margin-top: 10px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #0d1520;
+      color: #7a8fa0;
+      padding: 60px 0 0;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+    .footer-brand .logo-text .company { font-size: 18px; }
+    .footer-brand p { font-size: 14px; line-height: 1.7; margin: 14px 0 20px; color: #607080; }
+    .footer-phone {
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px;
+      color: var(--gold);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 6px;
+    }
+    .footer-lic { font-size: 12px; color: #5a6a7a; }
+    .footer-col h4 { font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: white; margin-bottom: 18px; font-family: 'Oswald', sans-serif; font-weight: 600; }
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a { color: #607080; text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    .footer-col ul li a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid #1e2c3a;
+      margin-top: 50px;
+      padding: 18px 20px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: #3d5060;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    /* ── MOBILE NAV ── */
+    .mobile-menu {
+      display: none;
+      background: var(--navy-dark);
+      padding: 20px;
+      flex-direction: column;
+      gap: 0;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      color: #c0d0dc;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      font-family: 'Oswald', sans-serif;
+      letter-spacing: 0.06em;
+    }
+    .mobile-menu a:last-child { border-bottom: none; }
+    .mobile-cta-bar {
+      display: none;
+      background: var(--red);
+      text-align: center;
+      padding: 14px;
+    }
+    .mobile-cta-bar a {
+      color: white;
+      font-family: 'Oswald', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-grid { grid-template-columns: repeat(3, 1fr); grid-template-rows: auto; }
+      .gallery-cell:first-child { grid-column: span 2; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .hamburger { display: flex; }
+      .mobile-cta-bar { display: block; }
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .stat-item:nth-child(2) { border-right: none; }
+      .services-grid { grid-template-columns: 1fr; }
+      .why-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+      .area-layout { grid-template-columns: 1fr; }
+      .quote-layout { grid-template-columns: 1fr; gap: 36px; }
+      .footer-inner { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-cell:first-child { grid-column: 1; }
+      .top-bar .inner { justify-content: center; }
+      .hero-trust { gap: 16px; }
+    }
+    @media (max-width: 480px) {
+      .stats-inner { grid-template-columns: repeat(2, 1fr); }
+      .quote-form { padding: 26px 20px; }
+      .area-cities { grid-template-columns: 1fr; }
+    }
+
+    /* ── FORM SUCCESS STATE ── */
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .form-success svg { width: 60px; height: 60px; fill: #27ae60; margin-bottom: 16px; }
+    .form-success h3 { color: var(--navy); font-size: 22px; margin-bottom: 10px; }
+    .form-success p { color: var(--gray-text); font-size: 16px; }
+  </style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="inner">
+    <span>📍 Serving Pierce County &amp; King County, WA &nbsp;|&nbsp; Mon–Fri 7am–6pm</span>
+    <span>
+      <span class="license-badge">LIC &amp; INS</span>
+      &nbsp;&nbsp;Free Estimates: <a href="tel:2530000000">253-000-0000</a>
+    </span>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="nav-inner">
+    <a href="#" class="logo" aria-label="Pacific Northwest Roofing Co. Home">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 12L12 3l9 9v9H3z"/></svg>
+      </div>
+      <div class="logo-text">
+        <div class="company">PNW Roofing Co.</div>
+        <div class="tagline">Pierce &amp; King County, WA</div>
+      </div>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#gallery">Our Work</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+      <a href="#quote" class="nav-cta">Free Estimate</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Open menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#gallery" onclick="toggleMenu()">Our Work</a>
+    <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+    <a href="#area" onclick="toggleMenu()">Service Area</a>
+    <a href="#quote" onclick="toggleMenu()">Free Estimate →</a>
+  </div>
+</header>
+<div class="mobile-cta-bar">
+  <a href="tel:2530000000">📞 Call Now: 253-000-0000</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" aria-label="Hero">
+  <div class="hero-bg" role="img" aria-label="Roofing crew working on a house"></div>
+  <div class="hero-inner">
+    <div class="hero-badge">Pierce &amp; King County's Trusted Roofers</div>
+    <h1>Quality Roofing You Can <span>Count On</span> — Rain or Shine</h1>
+    <p class="hero-sub">
+      Over 20 years protecting Pacific Northwest homes and businesses from the elements. We get it done right the first time — on time, on budget.
+    </p>
+    <div class="hero-buttons">
+      <a href="#quote" class="btn-primary">Get Your Free Estimate</a>
+      <a href="tel:2530000000" class="btn-secondary">📞 253-000-0000</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Licensed &amp; Insured
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Free Inspections
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Workmanship Warranty
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Local &amp; Family Owned
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar" aria-label="Company statistics">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-num">20+</div>
+      <div class="stat-label">Years in Business</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">2,400+</div>
+      <div class="stat-label">Roofs Completed</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">4.9★</div>
+      <div class="stat-label">Google Rating</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Licensed &amp; Insured</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="services-header">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title" id="services-heading">Complete Roofing Services for the Pacific Northwest</h2>
+      <div class="divider"></div>
+      <p class="section-intro">From full roof replacements to minor leak repairs, we handle every job with the same care and professionalism — no matter the size.</p>
+    </div>
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-img-placeholder" role="img" aria-label="Example photo: Roof Replacement">
+          <svg viewBox="0 0 24 24"><path d="M3 12L12 3l9 9v9H3V12z"/></svg>
+          <span>EXAMPLE PHOTO<br>Roof Replacement</span>
+        </div>
+        <div class="service-body">
+          <h3>Roof Replacement</h3>
+          <p>When repairs aren't enough, we handle full re-roofs efficiently. Asphalt shingle, metal, and flat roofing options available for any home or budget.</p>
+          <a href="#quote" class="service-link">Get a Quote →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-img-placeholder" role="img" aria-label="Example photo: Roof Repair">
+          <svg viewBox="0 0 24 24"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          <span>EXAMPLE PHOTO<br>Roof Repair</span>
+        </div>
+        <div class="service-body">
+          <h3>Roof Repair</h3>
+          <p>Leaks, missing shingles, storm damage — our repair crew responds fast and fixes it right. Don't let a small problem become an expensive one.</p>
+          <a href="#quote" class="service-link">Schedule Repair →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-img-placeholder" role="img" aria-label="Example photo: Gutter Installation">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          <span>EXAMPLE PHOTO<br>Gutters &amp; Drainage</span>
+        </div>
+        <div class="service-body">
+          <h3>Gutters &amp; Drainage</h3>
+          <p>PNW rainfall demands gutters that actually work. We install, replace, and clean gutters — keeping water away from your foundation and siding.</p>
+          <a href="#quote" class="service-link">Learn More →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-img-placeholder" role="img" aria-label="Example photo: Roof Inspection">
+          <svg viewBox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0zm-3-9A9 9 0 003 12a9 9 0 009 9 9 9 0 009-9A9 9 0 0012 3z"/></svg>
+          <span>EXAMPLE PHOTO<br>Roof Inspection</span>
+        </div>
+        <div class="service-body">
+          <h3>Roof Inspections</h3>
+          <p>Buying a home? Renewing insurance? Our detailed inspections give you a full picture of your roof's condition — with a written report included.</p>
+          <a href="#quote" class="service-link">Book Inspection →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-img-placeholder" role="img" aria-label="Example photo: Storm Damage">
+          <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <span>EXAMPLE PHOTO<br>Storm Damage</span>
+        </div>
+        <div class="service-body">
+          <h3>Storm Damage</h3>
+          <p>Wind, hail, and heavy rain take a toll on PNW roofs. We work directly with your insurance company and respond quickly when storms strike.</p>
+          <a href="#quote" class="service-link">Emergency Line →</a>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <div class="service-img-placeholder" role="img" aria-label="Example photo: Commercial Roofing">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/></svg>
+          <span>EXAMPLE PHOTO<br>Commercial Roofing</span>
+        </div>
+        <div class="service-body">
+          <h3>Commercial Roofing</h3>
+          <p>We serve businesses across Pierce and King County with flat, TPO, and metal roofing systems built to last — minimal downtime, maximum durability.</p>
+          <a href="#quote" class="service-link">Commercial Quote →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us" aria-labelledby="why-heading">
+  <div class="container">
+    <div class="section-label">Why Choose Us</div>
+    <h2 class="section-title" id="why-heading">The PNW Roofing Difference</h2>
+    <div class="divider"></div>
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+        </div>
+        <div class="why-text">
+          <h4>Fully Licensed &amp; Insured</h4>
+          <p>Washington State licensed contractor. Full liability coverage and worker's compensation on every job — protecting you and our crew.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/></svg>
+        </div>
+        <div class="why-text">
+          <h4>Local Crew, No Subcontractors</h4>
+          <p>Every job is done by our own trained employees — not day laborers or out-of-state crews. You know who's on your roof.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <div class="why-text">
+          <h4>On-Time, On-Budget</h4>
+          <p>We show up when we say we will and complete jobs on schedule. No surprise costs — your estimate is your price.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+        </div>
+        <div class="why-text">
+          <h4>Workmanship Warranty</h4>
+          <p>We stand behind every roof we install. Our workmanship warranty gives you peace of mind long after the crew packs up.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </div>
+        <div class="why-text">
+          <h4>Easy Communication</h4>
+          <p>Real people answer our phones. We keep you updated throughout the job and respond to questions quickly — no runaround.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </div>
+        <div class="why-text">
+          <h4>PNW Weather Experts</h4>
+          <p>We know what Pacific Northwest weather does to roofs. Every material and method we use is chosen for our specific climate — heavy rain, wind, and moss.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="section-label">Our Work</div>
+    <h2 class="section-title" id="gallery-heading">Recent Projects Across Pierce &amp; King County</h2>
+    <div class="divider"></div>
+    <p class="section-intro">From Tacoma bungalows to Federal Way commercial buildings — see the quality we deliver on every project.</p>
+    <div class="gallery-grid" role="list">
+      <div class="gallery-cell" role="listitem">
+        <div class="gallery-placeholder" role="img" aria-label="Example photo: Full roof replacement, Tacoma WA">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/></svg>
+          <span>EXAMPLE PHOTO<br>Full Replacement – Tacoma, WA</span>
+        </div>
+      </div>
+      <div class="gallery-cell" role="listitem">
+        <div class="gallery-placeholder" role="img" aria-label="Example photo: Storm repair, Auburn WA">
+          <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <span>EXAMPLE PHOTO<br>Storm Repair – Auburn, WA</span>
+        </div>
+      </div>
+      <div class="gallery-cell" role="listitem">
+        <div class="gallery-placeholder" role="img" aria-label="Example photo: Metal roof, Renton WA">
+          <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+          <span>EXAMPLE PHOTO<br>Metal Roof – Renton, WA</span>
+        </div>
+      </div>
+      <div class="gallery-cell" role="listitem">
+        <div class="gallery-placeholder" role="img" aria-label="Example photo: Gutter installation, Puyallup WA">
+          <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          <span>EXAMPLE PHOTO<br>Gutter Install – Puyallup, WA</span>
+        </div>
+      </div>
+      <div class="gallery-cell" role="listitem">
+        <div class="gallery-placeholder" role="img" aria-label="Example photo: Commercial flat roof, Kent WA">
+          <svg viewBox="0 0 24 24"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          <span>EXAMPLE PHOTO<br>Commercial Flat Roof – Kent, WA</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews" aria-labelledby="reviews-heading">
+  <div class="container">
+    <div class="section-label">What Our Customers Say</div>
+    <h2 class="section-title" id="reviews-heading">Trusted by Homeowners Across the PNW</h2>
+    <div class="divider"></div>
+    <div class="reviews-grid">
+
+      <article class="review-card">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <p>They replaced my entire roof in two days. The crew was professional, kept the yard clean, and the price was exactly what they quoted. After 20 years of having that roof, I wish I'd called them sooner.</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">EC</div>
+          <div class="reviewer-info">
+            <div class="name">Example Customer</div>
+            <div class="location">Tacoma, WA &nbsp;·&nbsp; Full Roof Replacement</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <p>Had a nasty leak right before the holidays. They came out the next morning, found the problem fast, and had it sealed up the same afternoon. Very reasonable charge. These guys are the real deal.</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">EC</div>
+          <div class="reviewer-info">
+            <div class="name">Example Customer</div>
+            <div class="location">Renton, WA &nbsp;·&nbsp; Leak Repair</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="stars" aria-label="5 out of 5 stars">
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <p>We own a small strip mall in Federal Way and needed the flat roof redone. PNW Roofing gave us the best price by far and finished on a Friday so we didn't have to shut any tenants down over the weekend. Outstanding.</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">EC</div>
+          <div class="reviewer-info">
+            <div class="name">Example Customer</div>
+            <div class="location">Federal Way, WA &nbsp;·&nbsp; Commercial Roofing</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="google-badge" style="margin-top:36px;">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/>
+        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+      </svg>
+      <div class="google-badge-text">
+        <strong>4.9 ★ on Google Reviews</strong>
+        <span>Based on 200+ verified customer reviews</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area" id="area" aria-labelledby="area-heading">
+  <div class="container">
+    <div class="area-layout">
+      <div>
+        <div class="section-label">Service Area</div>
+        <h2 class="section-title" id="area-heading">We Serve Pierce &amp; King County</h2>
+        <div class="divider"></div>
+        <p class="section-intro">We're local — we live and work right here in the South Sound. If you're within Pierce or King County, we've got you covered.</p>
+        <div class="area-cities" aria-label="Cities we serve">
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Tacoma</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Federal Way</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Puyallup</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Auburn</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Lakewood</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Kent</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Renton</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Burien</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Spanaway</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Maple Valley</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>Bonney Lake</div>
+          <div class="area-city"><svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>SeaTac</div>
+        </div>
+      </div>
+      <div>
+        <div class="map-box">
+          <div class="map-placeholder">
+            <svg viewBox="0 0 24 24"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+            <p>Pierce &amp; King County, WA</p>
+            <a href="https://www.google.com/maps/search/Pierce+County+and+King+County+Washington" target="_blank" rel="noopener noreferrer" class="map-link">
+              <svg viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              Open in Google Maps
+            </a>
+          </div>
+        </div>
+        <p style="font-size:13px;color:var(--gray-text);margin-top:12px;text-align:center;">
+          Replace the map box above with an embedded Google Maps iframe for your actual business location.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section class="quote" id="quote" aria-labelledby="quote-heading">
+  <div class="container">
+    <div class="quote-layout">
+      <div class="quote-info">
+        <div class="section-label">Free Estimate</div>
+        <h2 class="section-title" id="quote-heading">Request Your Free Roofing Quote</h2>
+        <div class="divider"></div>
+        <p>Fill out the form and we'll get back to you within one business day — usually sooner. Prefer to talk? Give us a call. We're happy to walk you through your options.</p>
+        <div class="contact-points">
+          <div class="contact-point">
+            <svg viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>Call or Text: <a href="tel:2530000000">253-000-0000</a></span>
+          </div>
+          <div class="contact-point">
+            <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span>Hours: Monday–Friday, 7am–6pm</span>
+          </div>
+          <div class="contact-point">
+            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            <span>Licensed, Bonded &amp; Insured in Washington State</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-form">
+        <h3>Tell Us About Your Project</h3>
+        <div id="quoteFormContent">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" placeholder="Smith" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="253-000-0000" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="address">Property Address *</label>
+            <input type="text" id="address" name="address" placeholder="123 Main St, Tacoma, WA" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Type of Service *</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service...</option>
+                <option>Full Roof Replacement</option>
+                <option>Roof Repair / Leak</option>
+                <option>Storm Damage</option>
+                <option>Gutters &amp; Drainage</option>
+                <option>Roof Inspection</option>
+                <option>Commercial Roofing</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="timing">When Do You Need This?</label>
+              <select id="timing" name="timing">
+                <option value="">Select timing...</option>
+                <option>As soon as possible</option>
+                <option>Within the next month</option>
+                <option>1–3 months</option>
+                <option>Just getting estimates</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Describe the Issue or Project</label>
+            <textarea id="message" name="message" placeholder="Tell us a little about what's going on with your roof — any leaks, visible damage, age of the roof, etc."></textarea>
+          </div>
+          <button type="button" class="form-submit" onclick="submitForm()">Submit My Free Estimate Request</button>
+          <p class="form-note">No spam, no pressure. We typically respond within 24 hours.</p>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          <h3>Request Received!</h3>
+          <p>Thanks — we'll be in touch within one business day to schedule your free estimate. Questions in the meantime? Call us at <strong><a href="tel:2530000000" style="color:var(--red);">253-000-0000</a></strong>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo">
+        <div class="logo-icon" style="width:40px;height:40px;">
+          <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:white;"><path d="M3 12L12 3l9 9v9H3z"/></svg>
+        </div>
+        <div class="logo-text">
+          <div class="company">PNW Roofing Co.</div>
+          <div class="tagline">Pierce &amp; King County, WA</div>
+        </div>
+      </div>
+      <p>Serving South Sound homeowners and businesses with quality roofing since 2001. Family-owned and community-focused.</p>
+      <a href="tel:2530000000" class="footer-phone">253-000-0000</a>
+      <div class="footer-lic">WA State License #PNWRFC-00000-XX &nbsp;|&nbsp; Fully Insured</div>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Roof Replacement</a></li>
+        <li><a href="#services">Roof Repair</a></li>
+        <li><a href="#services">Storm Damage</a></li>
+        <li><a href="#services">Gutters</a></li>
+        <li><a href="#services">Inspections</a></li>
+        <li><a href="#services">Commercial</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Service Area</h4>
+      <ul>
+        <li><a href="#area">Tacoma, WA</a></li>
+        <li><a href="#area">Federal Way, WA</a></li>
+        <li><a href="#area">Puyallup, WA</a></li>
+        <li><a href="#area">Auburn, WA</a></li>
+        <li><a href="#area">Renton, WA</a></li>
+        <li><a href="#area">Kent, WA</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#reviews">Customer Reviews</a></li>
+        <li><a href="#gallery">Our Work</a></li>
+        <li><a href="#quote">Free Estimate</a></li>
+        <li><a href="tel:2530000000">Call Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Pacific Northwest Roofing Co. All rights reserved.</span>
+    <span>Pierce County &amp; King County, Washington State</span>
+  </div>
+</footer>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+
+  function submitForm() {
+    const fname = document.getElementById('fname').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const address = document.getElementById('address').value.trim();
+    const service = document.getElementById('service').value;
+    if (!fname || !phone || !address || !service) {
+      alert('Please fill out all required fields (marked with *) before submitting.');
+      return;
+    }
+    document.getElementById('quoteFormContent').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+
+  // Smooth scroll offset for sticky header
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offset = 80;
+        window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
